@@ -106,17 +106,24 @@ async def openai_completions(request: Request, request_data: CompletionRequest):
                     if disconnected:
                         break
 
-                    yield {"data": json.dumps(resp)}
+                    data = json.dumps(resp)
+                    print(data)
+                    yield {"data": data}
 
         return EventSourceResponse(generator())  # SSE streaming
 
     else:
         response = OAIcompletions.completions(to_dict(request_data), is_legacy=is_legacy)
+        print(response)
         return JSONResponse(response)
 
 
 @app.post('/v1/chat/completions', response_model=ChatCompletionResponse, dependencies=check_key)
 async def openai_chat_completions(request: Request, request_data: ChatCompletionRequest):
+    path = request.url.path
+    print(path)
+    print(request_data)
+
     path = request.url.path
     is_legacy = "/generate" in path
 
@@ -129,12 +136,15 @@ async def openai_chat_completions(request: Request, request_data: ChatCompletion
                     if disconnected:
                         break
 
-                    yield {"data": json.dumps(resp)}
+                    data = json.dumps(resp)
+                    print(data)
+                    yield {"data": data}
 
         return EventSourceResponse(generator())  # SSE streaming
 
     else:
         response = OAIcompletions.chat_completions(to_dict(request_data), is_legacy=is_legacy)
+        print(response)
         return JSONResponse(response)
 
 

@@ -3,6 +3,7 @@ Downloads models from Hugging Face to models/username_modelname.
 
 Example:
 python download-model.py facebook/opt-1.3b
+python download-model.py 01-ai/Yi-34B-Chat-8bits
 
 '''
 
