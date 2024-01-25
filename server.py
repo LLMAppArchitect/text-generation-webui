@@ -179,6 +179,9 @@ if __name__ == "__main__":
 
     # This will make CUDA operations synchronous, which can help in getting a more accurate stack trace and understanding exactly where the error is occurring.
     os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
+    # Adjust the max_split_size_mb__: As the error message suggests, you can try setting the max_split_size_mb to avoid fragmentation. You can set the environment variable PYTORCH_CUDA_ALLOC_CONF to configure the memory allocator.
+    # For example, you can set it like this:
+    os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:100'
 
     # Load custom settings
     settings_file = None
