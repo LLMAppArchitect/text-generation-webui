@@ -1,2 +1,2 @@
 #!/bin/bash
-python server.py --auto-devices --gpu-memory 22 22 --trust-remote-code --api --api-port 5000
+python server.py --auto-devices --gpu-memory 24 24 --trust-remote-code --api --api-port 5000

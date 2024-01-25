@@ -177,6 +177,9 @@ if __name__ == "__main__":
     logger.info("Starting Text generation web UI")
     do_cmd_flags_warnings()
 
+    # This will make CUDA operations synchronous, which can help in getting a more accurate stack trace and understanding exactly where the error is occurring.
+    os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
+
     # Load custom settings
     settings_file = None
     if shared.args.settings is not None and Path(shared.args.settings).exists():

@@ -2,7 +2,12 @@
 Downloads models from Hugging Face to models/username_modelname.
 
 Example:
+
+# https://huggingface.co/mlabonne/NeuralBeagle14-7B
+python download-model.py mlabonne/NeuralBeagle14-7B
+
 python download-model.py facebook/opt-1.3b
+
 python download-model.py 01-ai/Yi-34B-Chat-8bits
 
 '''
