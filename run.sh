@@ -1,2 +1,2 @@
 #!/bin/bash
-python server.py --auto-devices --gpu-memory 23 23 --trust-remote-code --api --api-port 5000
+python server.py --loader Transformers --verbose --auto-devices --gpu-memory 22500MiB 23500MiB --trust-remote-code --api --api-port 5000

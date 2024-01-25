@@ -174,15 +174,21 @@ def create_interface():
 
 if __name__ == "__main__":
 
+    ############################## SET env #################################
+    # This will make CUDA operations synchronous,
+    # which can help in getting a more accurate stack trace and understanding exactly where the error is occurring.
+    os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
+    # Adjust the max_split_size_mb__: As the error message suggests,
+    # you can try setting the max_split_size_mb to avoid fragmentation.表示将内存分配限制在最大 10MB 的块中。这有助于减少显存碎片，从而提高内存利用率。
+    # 较小的值可能会导致更高的内存利用率，但也可能增加内存分配的开销。较大的值可能会减少内存分配的开销，但可能导致内存利用率降低。您需要根据您的硬件和应用程序需求进行权衡。
+    # 要最小化显存占用，您可以尝试将 max_split_size_mb 设置为较小的值（ > 20 ），例如 64。
+    # 但请注意，这可能会增加内存分配的开销。您需要根据实际情况进行测试，以找到适合您的应用程序的最佳设置。
+    # You can set the environment variable PYTORCH_CUDA_ALLOC_CONF to configure the memory allocator.
+    # For example, you can set it like this:
+    os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:64'
+
     logger.info("Starting Text generation web UI")
     do_cmd_flags_warnings()
-
-    # This will make CUDA operations synchronous, which can help in getting a more accurate stack trace and understanding exactly where the error is occurring.
-    os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-    # Adjust the max_split_size_mb__: As the error message suggests, you can try setting the max_split_size_mb to avoid fragmentation. You can set the environment variable PYTORCH_CUDA_ALLOC_CONF to configure the memory allocator.
-    # For example, you can set it like this:
-    os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:100'
-
     # Load custom settings
     settings_file = None
     if shared.args.settings is not None and Path(shared.args.settings).exists():
