@@ -12,7 +12,17 @@ from modules.models import clear_torch_cache, load_model, unload_model
 from modules.models_settings import get_model_metadata, update_model_parameters
 from modules.text_generation import encode
 
+"""
+这段代码的作用是加载过去的评估数据。如果存在名为'logs/evaluations.csv'的文件，那么将读取该文件为一个DataFrame对象df，并将其中的'Perplexity'列转换为数值类型。然后返回这个DataFrame对象df。如果文件不存在，则返回一个空的DataFrame对象，列名为['Model', 'LoRAs', 'Dataset', 'Perplexity', 'stride', 'max_length', 'Date', 'Comment']。
 
+代码步骤解释：
+1. 首先，通过Path('logs/evaluations.csv').exists()判断是否存在'logs/evaluations.csv'文件。
+2. 如果文件存在，则使用pd.read_csv(Path('logs/evaluations.csv'), dtype=str)读取该文件为一个DataFrame对象df，其中dtype=str表示将所有数据以字符串类型读取。
+3. 接下来，使用pd.to_numeric(df['Perplexity'])将df中的'Perplexity'列转换为数值类型。
+4. 最后，返回转换后的DataFrame对象df。
+5. 如果文件不存在，则使用pd.DataFrame(columns=['Model', 'LoRAs', 'Dataset', 'Perplexity', 'stride', 'max_length', 'Date', 'Comment'])创建一个空的DataFrame对象，并指定列名为['Model', 'LoRAs', 'Dataset', 'Perplexity', 'stride', 'max_length', 'Date', 'Comment']。
+6. 返回空的DataFrame对象。
+"""
 def load_past_evaluations():
     if Path('logs/evaluations.csv').exists():
         df = pd.read_csv(Path('logs/evaluations.csv'), dtype=str)
