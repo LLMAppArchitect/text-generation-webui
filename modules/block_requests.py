@@ -36,12 +36,14 @@ def my_get(url, **kwargs):
 # Kindly provided by our friend WizardLM-30B
 def my_open(*args, **kwargs):
     filename = str(args[0])
-    if filename.endswith('index.html'):
-        with original_open(*args, **kwargs) as f:
-            file_contents = f.read()
+    # if filename.endswith('index.html'):
+    #     with original_open(*args, **kwargs) as f:
+    #         file_contents = f.read()
+    #
+    #     file_contents = file_contents.replace(b'\t\t<script\n\t\t\tsrc="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.7/iframeResizer.contentWindow.min.js"\n\t\t\tasync\n\t\t></script>', b'')
+    #     file_contents = file_contents.replace(b'cdnjs.cloudflare.com', b'127.0.0.1')
+    #     return io.BytesIO(file_contents)
+    # else:
+    #     return original_open(*args, **kwargs)
 
-        file_contents = file_contents.replace(b'\t\t<script\n\t\t\tsrc="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.7/iframeResizer.contentWindow.min.js"\n\t\t\tasync\n\t\t></script>', b'')
-        file_contents = file_contents.replace(b'cdnjs.cloudflare.com', b'127.0.0.1')
-        return io.BytesIO(file_contents)
-    else:
-        return original_open(*args, **kwargs)
+    return original_open(*args, **kwargs)
