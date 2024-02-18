@@ -1,6 +1,0 @@
-url: https://huggingface.co/TheBloke/Yi-34B-Chat-GPTQ
-branch: main
-download date: 2024-01-28 02:58:31
-sha256sum:
-    27188b75394d8f5570a73935a56ac1d4287df24c0dec201a7989dcd4ead149b6 model.safetensors
-    386c49cf943d71aa110361135338c50e38beeff0a66593480421f37b319e1a39 tokenizer.model
