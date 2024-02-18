@@ -7,7 +7,7 @@ from torch.nn import CrossEntropyLoss
 from transformers import GenerationConfig, PretrainedConfig, PreTrainedModel
 from transformers.modeling_outputs import CausalLMOutputWithPast
 
-from modules import RoPE, shared
+from modules import RoPE, llama_cpp_python_hijack, shared
 from modules.logging_colors import logger
 
 try:
@@ -216,7 +216,8 @@ class LlamacppHF(PreTrainedModel):
             'tensor_split': tensor_split_list,
             'rope_freq_scale': 1.0 / shared.args.compress_pos_emb,
             'logits_all': shared.args.logits_all,
-            'offload_kqv': not shared.args.no_offload_kqv
+            'offload_kqv': not shared.args.no_offload_kqv,
+            'split_mode': 1 if not shared.args.row_split else 2
         }
 
         Llama = llama_cpp_lib().Llama
