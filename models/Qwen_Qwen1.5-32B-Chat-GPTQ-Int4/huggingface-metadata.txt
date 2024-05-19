@@ -1,0 +1,9 @@
+url: https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GPTQ-Int4
+branch: main
+download date: 2024-04-07 20:12:58
+sha256sum:
+    c4de668333474d7a285deaa6bae2f7e5efd06738f5ba1bbd602d83d4213aa2e4 model-00001-of-00005.safetensors
+    ada2b0935d0e40994796e48f1a404a4d60493d2fb7ba146dbabb1cd52ea63b3f model-00002-of-00005.safetensors
+    e996d2678b01df627a148d7dace3ed9e04f8a195d3bb337cdf835c8ae35a3c3f model-00003-of-00005.safetensors
+    b8e4959dd115c50c563b570f61fb1adea49d502873913074ec3ef0dc77ca6eee model-00004-of-00005.safetensors
+    f548b49f2f5af13fb5bf722c1b871b7032b5bfe3bdc7ca006b941ac055907600 model-00005-of-00005.safetensors

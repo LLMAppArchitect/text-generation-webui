@@ -1,6 +1,0 @@
-url: https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GPTQ
-branch: gptq-4bit-32g-actorder_True
-download date: 2024-01-28 14:08:36
-sha256sum:
-    4af208f351392542349309a5491c20578c6af4abea8c1dfdc11753ea6060dcaf model.safetensors
-    dadfd56d766715c61d2ef780a525ab43b8e6da4de6865bda3d95fdef5e134055 tokenizer.model

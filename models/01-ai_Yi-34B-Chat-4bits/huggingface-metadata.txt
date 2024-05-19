@@ -1,9 +1,0 @@
-url: https://huggingface.co/01-ai/Yi-34B-Chat-4bits
-branch: main
-download date: 2024-02-18 20:31:36
-sha256sum:
-    978aef2af45de619217b0911bf89310f3d5f929e2b20f3c347ccf29f32d651f9 model-00001-of-00002.safetensors
-    70c4dca03ee709bd4e11b6b777812555a4a840dad17b4cc65aa85a0c9757de6d model-00002-of-00002.safetensors
-    6b48e2a1536043eaae87822acde149ae04f08dfa7ea2b9db5ad04563abf3d01c pytorch_model-00001-of-00002.bin
-    13fe3e8692126558f57580bfb84e66601d1c5e2207de3f8505583e55354394b4 pytorch_model-00002-of-00002.bin
-    386c49cf943d71aa110361135338c50e38beeff0a66593480421f37b319e1a39 tokenizer.model

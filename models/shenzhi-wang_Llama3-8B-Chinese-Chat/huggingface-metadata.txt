@@ -1,0 +1,8 @@
+url: https://huggingface.co/shenzhi-wang/Llama3-8B-Chinese-Chat
+branch: main
+download date: 2024-04-24 20:21:07
+sha256sum:
+    66e359039536b41c7498a0f48f9581f1889a429dcfa84cc4e58c30068f66ebab model-00001-of-00004.safetensors
+    35a16464d83fc203d8e0d97fc635242673c697733be87b7579716e8d0439dc3a model-00002-of-00004.safetensors
+    72905ad24954a3fa3dc48a44bdadd80c787e199e0ec8d45def4a9a2498d0c45f model-00003-of-00004.safetensors
+    34a1139a529e9fb4b5511a324cd519e074d09eb2fe7f61c0a4de5e053b746cf6 model-00004-of-00004.safetensors
