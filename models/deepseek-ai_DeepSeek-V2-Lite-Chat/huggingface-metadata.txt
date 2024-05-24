@@ -1,0 +1,8 @@
+url: https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat
+branch: main
+download date: 2024-05-19 12:55:37
+sha256sum:
+    a314b79a30810b1038f9db08345178e16fb5742aa266c4a3dc05054c59800082 model-00001-of-000004.safetensors
+    b0bd088feada0af954614da3a5b179c4d4d5d8bb2482ec83194d101f3fe91796 model-00002-of-000004.safetensors
+    d31b192e488f0b3a04e007d842c3c9ba5783d944cb1cc27402fe8b8bb837c490 model-00003-of-000004.safetensors
+    304499be0ea06bf8a3937d7a3cc515bc3738dbd288bdd0bbc1b2d3560fce4930 model-00004-of-000004.safetensors
