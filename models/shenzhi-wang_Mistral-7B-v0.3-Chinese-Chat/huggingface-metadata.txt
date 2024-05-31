@@ -1,0 +1,8 @@
+url: https://huggingface.co/shenzhi-wang/Mistral-7B-v0.3-Chinese-Chat
+branch: main
+download date: 2024-05-31 21:30:32
+sha256sum:
+    7f47002bafd6eb892913b71b13b0f5c3641b3d123788d12b3ecbab85a3570664 model-00001-of-00003.safetensors
+    66afe1bb8929431aba1c9edd193eb8d455106fe2e4345674f6ba4ab7c6bd35bd model-00002-of-00003.safetensors
+    cb86b82eef2c1b1dd66adbb3fc4cc92cb140c3545fba0c95f11f0398a460f6e3 model-00003-of-00003.safetensors
+    37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89 tokenizer.model
