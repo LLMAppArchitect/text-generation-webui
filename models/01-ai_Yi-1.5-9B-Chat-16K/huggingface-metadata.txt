@@ -1,0 +1,9 @@
+url: https://huggingface.co/01-ai/Yi-1.5-9B-Chat-16K
+branch: main
+download date: 2024-06-03 20:43:56
+sha256sum:
+    33dc004ddc33258ed7ffa1cccc12467d859378d5cc4d1e2f9d24af5a70578c07 model-00001-of-00004.safetensors
+    702f36220db4aa5d057f246ec472bc8f3e83a2f3e9ec7e58a677c07fe749e803 model-00002-of-00004.safetensors
+    568afd68c620f5eb95d8a6d8ee85d6a1be6f5c47853f3127425dfdff481ec0a2 model-00003-of-00004.safetensors
+    87eef45c2a8537527c1413e43c6d818457c101519551c08e619db43e7ed2f6bd model-00004-of-00004.safetensors
+    386c49cf943d71aa110361135338c50e38beeff0a66593480421f37b319e1a39 tokenizer.model

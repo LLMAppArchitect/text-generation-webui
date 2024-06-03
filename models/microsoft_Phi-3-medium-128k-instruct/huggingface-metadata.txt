@@ -1,6 +1,6 @@
 url: https://huggingface.co/microsoft/Phi-3-medium-128k-instruct
 branch: main
-download date: 2024-05-25 19:42:09
+download date: 2024-06-01 22:51:55
 sha256sum:
     f438f5fea1b810b8883243424fc21733521e6de38727d27b79dd677b6722483e model-00001-of-00006.safetensors
     218be0ac917173a0160c27d8b5547fda69b77a8d38e3ead87157aadb37b98410 model-00002-of-00006.safetensors
