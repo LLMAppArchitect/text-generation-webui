@@ -1,0 +1,8 @@
+url: https://huggingface.co/Qwen/Qwen2-7B-Instruct
+branch: main
+download date: 2024-06-07 21:54:53
+sha256sum:
+    26d9919262ccd063fcdfd926763fe9025ef1e3073767aaa8c83a375d7c5140c4 model-00001-of-00004.safetensors
+    f5bb99fdadcac55c2c176497ec99f088a1764e78ed986fa4a0d45d12426ef0fa model-00002-of-00004.safetensors
+    0b749a4446d7cda007d5e7bd9f908849d08d89867192d4c039dc167e9ab5a02e model-00003-of-00004.safetensors
+    da724bb7d3c3512eb371aa6caa5bcc08d78bda84f94e00ae9a9b2124e3e9c62f model-00004-of-00004.safetensors
